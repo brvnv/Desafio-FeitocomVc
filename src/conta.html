@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abra sua conta - Banco Itaú - Feito Com você</title>
+</head>
+<body>
+    <h1>Banco Itaú</h1>
+<nav>
+    <ul>
+      <li> <a href="index.html">Home</a> </li>
+      <li><a href="conta.html">Abra sua conta</a> </li>
+      <li><a href="sobre.html">Sobre o Itaú</a> </li>
+    </ul>
+</nav>
+    <h2>Abra sua conta</h2>
+    <br>
+    <form action="contasuc.html" method="POST">
+        Nome: <input type="text" nane="Nome" placeholder="EX: João da Silva" required> <br/>
+        CPF: <input type="number" name="CPF" placeholder="EX: 123.456.789-10" required> <br/>
+        RG: <input type="number" name="RG" placeholder="EX: 123.345.67-8" required> <br/>
+        Sexo: <input type="radio" id="masculino" name="Sexo" value="Masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="feminino" name="Sexo" value="Feminino">
+        <label for="feminino">Feminino</label>
+        <input type="radio" id="outros" name="Sexo" value="Outros">
+        <label for="outros">Outros</label><br/>
+        Endereço: <input type="text" name="Endereço" placeholder="Ex. Av Paulista" required> <br/>
+        Número: <input type="number" name="Numero" placeholder="Ex. 213" required> <br/>
+        Cep: <input type="number" name="Cep" placeholder="EX: 12345-678"> <br/>
+        Telefone fixo: <input type="number" name="Telefone fixo" placeholder="Ex: 11 2345 6789"> <br/>
+        Telefone celular: <input type="number" name="Telefone celular" placeholder="Ex: 11 2345 6789" required> <br/>
+        <input type="submit" value="Criar conta"> <br/>
+    </form>
+<footer>
+    <p>#FeitoComVC </p>
+</footer>
+</body>
+</html>
