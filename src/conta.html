@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts\validacoes.js"></script>
     <title>Abra sua conta - Banco Itaú - Feito Com você</title>
 </head>
 <body>
@@ -17,7 +18,7 @@
 </nav>
     <h2>Abra sua conta</h2>
     <br>
-    <form action="contasuc.html" method="POST">
+    <form action="contasuc.html" onsubmit="return validaDados()" method="post">
         Nome: <input type="text" name="Nome" id="nome" placeholder="EX: João da Silva" required> <br/>
         CPF: <input type="number" name="CPF" id="cpf" placeholder="EX: 123.456.789-10" required> <br/>
         RG: <input type="number" name="RG" id="rg" placeholder="EX: 123.345.67-8" required> <br/>
