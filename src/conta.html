@@ -18,7 +18,7 @@
 </nav>
     <h2>Abra sua conta</h2>
     <br>
-    <form action="contasuc.html" onsubmit="return validaDados()" method="post">
+    <form name="dadosConta" onsubmit="return(validaDados());" action="contasuc.html" method="post">
         Nome: <input type="text" name="Nome" id="nome" placeholder="Nome: " required> <br/>
         CPF: <input type="number" name="CPF" id="cpf" placeholder="CPF: " required> <br/>
         RG: <input type="number" name="RG" id="rg" placeholder="RG: " required> <br/>

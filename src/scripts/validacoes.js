@@ -1,43 +1,24 @@
-function validaCPF(cpf){
-    if(cpf.length != 11){
-        return false;
-    }else{
-
-        var numeros = cpf.substring(0, 9);
-        var digitos = cpf.substring(9);
-
-        var soma = 0;
-        for (var i = 10; i > 1; i --){
-            soma += numeros.charAt(10 - i)* i;
-        }
-        var resultado = soma % 11 < 2 ? 0 : 11 - ( soma % 11);
-        if (resultado != digitos.charAt(0)){
-            return false;
-        }
-
-        soma = 0;
-        numeros = cpf.substring(0, 10);
-
-        for (var k = 11; k > 1; k --){
-            soma += numeros.charAt(11 - k) * k;
-        }
-
-            resultado = soma % 11 < 2 ? 0 :  11 - (soma % 11);
-
-            if(resultado != digitos.charAt(1)){
-                return false;
-            }
-            return true;
+function validaCPF(cpf) {
+    if(cpf.length!=11) {
+      alert("Por favor, digite um CPF válido para continuar.");
+      return false;
+    } else {
+      return true;
     }
 }
-function validaDados(){
-    var cpf = document.getElementById('cpf').value;
-    var resultadoValidacao =  validaCPF(cpf);
 
-    if (resultadoValidacao){
-return resultadoValidacao;
-    }else{
-    alert("Por favor, digite um CPF válido para continuar.");
-    return resultadoValidacao;
-    }
+function validaCep (cep) {
+    if(cep.lenght != 8) {
+      alert ("Por favor, digite um cep válido para continuar.");
+      return false;
+}
+else {
+    return true;
+}
+}
+
+function validaDados(){
+    validaCPF(document.dadosConta.cpf.value);
+    validaCep(document.dadosConta.cep.value);
+    //Ao final de todas validações retorna true e avança.
 }
