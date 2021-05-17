@@ -8,7 +8,7 @@ function validaCPF(cpf) {
 }
 
 function validaCep (cep) {
-    if(cep.lenght != 8) {
+    if(cep.length != 8) {
       alert ("Por favor, digite um cep válido para continuar.");
       return false;
 }
@@ -18,7 +18,7 @@ else {
 }
 
 function validaDados(){
-    validaCPF(document.dadosConta.cpf.value);
-    validaCep(document.dadosConta.cep.value);
-    //Ao final de todas validações retorna true e avança.
+    if(validaCPF(document.dadosConta.cpf.value)==false) return false;
+    if(validaCep(document.dadosConta.cep.value)==false) return false;
+    return true;
 }
