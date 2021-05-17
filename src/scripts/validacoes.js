@@ -63,6 +63,24 @@ function validaNumero(numero) {
     }
 }
 
+function validaTelFixo(telFixo) {
+    if(telFixo.length != 10) {
+      alert ("Por favor, digite um telefone fixo válido para continuar");
+      return false;
+    } else {
+      return true;
+    }
+}
+
+function validaTelCel(telCel) {
+    if(telCel.length != 11) {
+      alert("Por favor, digite um telefone celular válido para continuar.");
+      return false;
+    } else {
+      return true;
+    }
+}
+
 function validaDados(){
     if(validaNome(document.dadosConta.nome.value)==false) return false;
     if(validaCPF(document.dadosConta.cpf.value)==false) return false;
@@ -70,5 +88,7 @@ function validaDados(){
     if(validaRua(document.dadosConta.endereco.value)==false) return false;
     if(validaNumero(document.dadosConta.numero.value)==false) return false;
     if(validaCep(document.dadosConta.cep.value)==false) return false;
+    if(validaTelFixo(document.dadosConta.telFixo.value)==false) return false;
+    if(validaTelCel(document.dadosConta.telCel.value)==false) return false;
     return true;
 }
