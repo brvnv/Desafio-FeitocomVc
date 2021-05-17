@@ -4,18 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style\geral.css" />
     <script src="scripts\validacoes.js"></script>
     <title>Abra sua conta - Banco Itaú - Feito Com você</title>
 </head>
 <body>
-    <h1>Banco Itaú</h1>
-<nav>
-    <ul>
-      <li> <a href="index.html">Home</a> </li>
-      <li><a href="conta.html">Abra sua conta</a> </li>
-      <li><a href="sobre.html">Sobre o Itaú</a> </li>
-    </ul>
-</nav>
+    <div id="cabecalho" style="color: orangered;"></div>
+      <h1>Banco Itaú</h1>
+    </div>
+    <div class="fundoMenu">
+      <nav>
+        <ul>
+          <li> <a href="index.html">Home</a> </li>
+          <li><a href="conta.html">Abra sua conta</a> </li>
+          <li><a href="sobre.html">Sobre o Itaú</a> </li>
+        </ul>
+      </nav>
+    </div>
+  <div class="formAbraConta">
     <h2>Abra sua conta</h2>
     <br>
     <form name="dadosConta" action="contasuc.html" method="post" onsubmit="return validaDados()">
@@ -35,6 +41,7 @@
         Telefone celular: <input type="number" name="Telefone celular" id="telCel" placeholder="Telefone celular: " required> <br/>
         <input type="submit" value="Criar conta"> <br/>
     </form>
+    </div>
 <footer>
     <p>#FeitoComVC </p>
 </footer>
